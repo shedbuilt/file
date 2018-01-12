@@ -1,5 +1,5 @@
 NAME=file
 VERSION=5.32
-REVISION=3
+REVISION=4
 SRC=ftp://ftp.astron.com/pub/file/file-5.32.tar.gz
 SRCMD5=4f2503752ff041895090ed6435610435
