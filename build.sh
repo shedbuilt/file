@@ -1,5 +1,5 @@
 #!/bin/bash
-case "$SHED_BUILDMODE" in
+case "$SHED_BUILD_MODE" in
     toolchain)
         SHEDPKG_PREFIX='/tools'
         ;;
@@ -7,6 +7,6 @@ case "$SHED_BUILDMODE" in
         SHEDPKG_PREFIX='/usr'
         ;;
 esac
-./configure --prefix=$SHEDPKG_PREFIX || return 1
-make -j $SHED_NUMJOBS || return 1
-make DESTDIR="$SHED_FAKEROOT" install || return 1
+./configure --prefix=$SHEDPKG_PREFIX &&
+make -j $SHED_NUM_JOBS &&
+make DESTDIR="$SHED_FAKE_ROOT" install
