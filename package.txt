@@ -1,7 +1,7 @@
 NAME=file
-VERSION=5.33
-REVISION=1
-SRC=ftp://ftp.astron.com/pub/file/file-5.33.tar.gz
-SRCMD5=bbe6db96e3a9ca9554dce647390540ef
+VERSION=5.34
+REVISION=2
+SRC=ftp://ftp.astron.com/pub/file/file-5.34.tar.gz
+SRCMD5=44b0b6983462b18f96403d4d3ad80254
 OPTIONS=toolchain|bootstrap|release
 DEFAULTS=release
